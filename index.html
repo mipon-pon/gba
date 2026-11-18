@@ -22,7 +22,7 @@
 body{background-color:var(--bg-body); color:var(--text-main); display:flex; justify-content:center; align-items:center; min-height:100vh; transition:background 0.3s, color 0.3s;}
 main{flex:1; display:flex; flex-direction:column; padding:0 12px 12px 12px; overflow-y:auto; gap:1px;}
 footer{text-align:center; font-size:0.5rem; color:var(--footer-color); padding:8px 0 0 0; opacity:0.5;}
-#game-container{width:100%; max-width:440px; height:100vh; max-height:900px; background-color:var(--bg-container); background-image:linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(0,0,0,0.05)); border:2px solid var(--border-color); border-radius:8px; box-shadow:0 10px 30px rgba(0, 0, 0, 0.5); display:flex; flex-direction:column; overflow:hidden; position:relative;}
+#game-container{width:100%; max-width:420px; height:95vh; max-height:880px; margin:auto; background-color:var(--bg-container); background-image:linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(0,0,0,0.05)); border:2px solid var(--border-color); border-radius:8px; box-shadow:0 10px 30px rgba(0, 0, 0, 0.5); display:flex; flex-direction:column; overflow:hidden; position:relative;}
 
 /* タイトルヘッダー */
 .game-title{background-color:var(--header-bg); padding:12px 15px; text-align:center; border-bottom:1px solid var(--border-color);}
@@ -48,7 +48,7 @@ footer{text-align:center; font-size:0.5rem; color:var(--footer-color); padding:8
 .paragraph.active{display:flex;}
 
 /* 本文テキストエリア（外枠） */
-.paged-text-container{position:relative; background-color:var(--box-bg); background-image:linear-gradient(to bottom, rgba(122, 104, 80, 0.12) 1px, transparent 1px); background-size:100% 2.4rem; border-radius:6px; padding:15px 35px; border:1px solid var(--border-color); flex:1; display:flex; flex-direction:column; justify-content:space-between; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1); overflow:hidden;}
+.paged-text-container{position:relative; background-color:var(--box-bg); background-image:linear-gradient(to bottom, rgba(122, 104, 80, 0.12) 1px, transparent 1px); background-size:100% 2.4rem; border-radius:6px; padding:15px 42px; border:1px solid var(--border-color); flex:1; display:flex; flex-direction:column; justify-content:space-between; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1); overflow:hidden;}
 .paged-text-container::before{content:""; position:absolute; top:0; left:0; width:100%; height:100%; background-image:url('img/pen.svg'); background-position:center center; background-repeat:no-repeat; background-size:75%; opacity:0.15; pointer-events:none; z-index:0;}
 .paged-text-container > *{position:relative; z-index:1; }
 .paged-text-container .page-content-wrapper{display:flex !important; flex-direction:row !important; flex-wrap:nowrap !important; gap:16px !important; transition:transform 0.3s ease-in-out !important; width:100%; flex:1;}
